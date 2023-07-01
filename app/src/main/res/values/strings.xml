@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SummerPractise</string>
+    <string name="i_m_a_knopka">I\'m a knopka</string>
+    <string name="length">Рост</string>
+    <string name="weight">Вес</string>
+    <string name="name">Имя</string>
+    <string name="age">Возраст</string>
+</resources>
