@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+    
     private fun calculateCcal(length: Int?, weight: Double?, age: Int?): Double {
         return (length ?: 0) * (weight ?: 0.0) * (age ?: 0)
     }
