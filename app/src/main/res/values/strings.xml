@@ -5,4 +5,6 @@
     <string name="weight">Вес</string>
     <string name="name">Имя</string>
     <string name="age">Возраст</string>
+
+    <string name="hello_blank_fragment">Profile Screen</string>
 </resources>

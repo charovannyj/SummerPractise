@@ -6,20 +6,34 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.core.widget.addTextChangedListener
+import com.itis.summerpractise.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private var binding: ActivityMainBinding? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val calculateButton = findViewById<Button>(R.id.calculateButton)
+        /*val calculateButton = findViewById<Button>(R.id.calculateButton)
         calculateButton.setOnClickListener {
             dataCalculation()
+        }*/
+
+        val newBinding = ActivityMainBinding.inflate(layoutInflater)
+        binding = newBinding
+        setContentView(newBinding.root)
+        binding!!.editAge.addTextChangedListener {
+            Log.e("editAge", "Message: ${it?.toString()}")
+            binding!!.editAge.error = null
         }
+        binding!!.tiLogin.error = "Eror"
+        binding!!.calculateButton.setOnClickListener{
+            dataCalculation()
+        }
+
     }
-
-
-    
     private fun calculateCcal(length: Int?, weight: Double?, age: Int?): Double {
         return (length ?: 0) * (weight ?: 0.0) * (age ?: 0)
     }
@@ -48,6 +62,11 @@ class MainActivity : AppCompatActivity() {
         } else {
             return "Возраст не указан"
         }
+    }
+
+    private fun mapTest() {
+        val map = HashMap<String, String>()
+        map["k"] = "r"
     }
 
     private fun dataCalculation() {
