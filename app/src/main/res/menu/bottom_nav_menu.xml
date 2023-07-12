@@ -16,8 +16,9 @@
         android:id="@+id/chatsFragment"
         android:title="Chats"
         android:icon="@drawable/baseline_chat_24" />
+
     <item
-        android:id="@+id/dataFragment"
-        android:title="Data"
-        android:icon="@drawable/baseline_data_array_24" />
+        android:id="@+id/daysFragment"
+        android:title="Days"
+        android:icon="@drawable/baseline_temple_hindu_24"/>
 </menu>
