@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/newsFragment"
+        android:title="News"
+        android:icon="@drawable/baseline_newspaper_24" />
+    <item
+        android:id="@+id/settingFragment"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_applications_24" />
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/baseline_self_improvement_24" />
+    <item
+        android:id="@+id/chatsFragment"
+        android:title="Chats"
+        android:icon="@drawable/baseline_chat_24" />
+
+    <item
+        android:id="@+id/daysFragment"
+        android:title="Days"
+        android:icon="@drawable/baseline_temple_hindu_24"/>
+</menu>
